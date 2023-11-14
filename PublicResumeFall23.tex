@@ -1,0 +1,207 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document Class and Page Geometry
+\documentclass{article}
+\usepackage[top=0.25in, bottom=0.25in, left=0.25in, right=0.25in]{geometry}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages for tables and table formatting
+\usepackage{array} % 
+\usepackage{multirow}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages for text and link formatting
+\usepackage{enumitem} %for \begin{itemize} LIST \end{itemize}
+\usepackage{verbatim}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=false,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\urlstyle{same}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEGIN DOCUMENT
+\begin{document}
+% HEADER - For Applications
+\begin{center}
+\thispagestyle{empty}
+\huge \textbf{ Shikhar Kumar}\\
+\normalsize kshikhar99@gmail.com $\mid$ 605-838-9735 $\mid$ Boston, MA    
+\\
+\hrulefill
+\end{center}
+
+% HEADER - For LinkedIn (phone# deleted)
+\begin{comment}
+\begin{center}
+\thispagestyle{empty}
+\large \textbf{ Shikhar Kumar}\\
+\normalsize kshikhar99@gmail.com $\mid$ Boston, MA    
+\\
+\hrulefill
+\end{center}
+\end{comment}
+
+% BEGIN CONTENT
+
+\begin{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% OBJECTIVE (COMMENTED OUT)
+% Who you are, what domain, what are you looking for and when?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent \textbf{\underline{OBJECTIVE}} \\
+% No need for objective unless applying to 
+% a non-engineering job where you might want
+% to explain yourself, but at that point 
+% just do in the cover letter.
+\noindent  LOREM IPSUM \\
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% WORK EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent \textbf{\large\underline{WORK EXPERIENCE}} \\
+% HAEMONETICS (HMNTCS)
+\noindent \textbf{Haemonetics} \hfill \textit{Boston, MA} \\ 
+\textbf{Systems Test Engineer II} - \textit{Plasma Unit} \hfill \textit{Jun 2023} - \textit{Oct 2023 (Contract)}
+\begin{itemize}[noitemsep,nolistsep]
+\item {Performed embedded software validation and verification testing for a blood plasma and platelet components collection device for the Japanese market}
+\item {Systematically interpreted, translated, and updated legacy embedded software requirements for a new major version}
+\end{itemize}
+
+\vspace{3 pt} %space between HMNTCS-MDTRNC
+
+% MEDTRONIC (MDTRNC)
+\noindent \textbf{Medtronic - Surgical Robotics} \hfill \textit{North Haven, CT} \\
+\textbf{Test Development Engineer I} - \textit{V\&V Engineering Services} \hfill \textit{Mar 2022} - \textit{Jun 2023 (Contract)}
+\begin{itemize}[noitemsep,nolistsep]
+    \item{Authored and overhauled dozens of software and hardware test methods related to kinematics, programmable logic, and cybersecurity for verification of Hugo\textsuperscript{TM}, a surgeon-operated robotic platform}
+    \item {Developed validated MATLAB applications, Python programs, and bash scripts for engineers to perform tests and analyze data}
+\begin{itemize}[noitemsep,nolistsep]
+    \item[--]{Wrote scientific software in MATLAB and Python for time series analysis, signal filtration, complex coordinate transformations of raw sensor data, data visualization, and parametric statistics}
+    \begin{comment}
+    \item[--]{Maintained Simulink models to command robotic arm trajectories}
+    \item[--]{Automated workflows for testing PL error-handling and robustness by writing shell scripts which output files then parsed by Python scripts}
+    \end{comment}
+\end{itemize}
+\item{Performed investigations and root cause analysis in a highly regulated industry}
+\begin{itemize}[noitemsep,nolistsep]
+    \item[--]{Nominated for quarterly merit award by a principal engineer outside of my immediate team for debugging of a challenging programmable logic test method}
+    \item[--]{Alerted team to small deviations in the system clock of widely-used and expensive optical tracking equipment}
+\end{itemize}
+\item{Trained operators on test methods, organized blind trials, and conducted test method validation analysis}
+\end{itemize}
+
+\vspace{3 pt} %space between MDTRNC-EVQ
+
+% EVOQUA (EVQ)
+\noindent \textbf{Evoqua Water Technologies} \hfill \textit{Roseville, MN} \\
+\textbf{Process Engineering Co-op} - \textit{Wastewater and Ion Exchange Div.} \hfill \textit{June 2020} - \textit{Dec 2020} \& \textit{June 2021} - \textit{Dec 2021}
+\renewcommand{\labelitemii}{$\bullet$}
+\begin{itemize}[noitemsep,nolistsep]
+\item {Spearheaded development of a computer application, Ion, using Microsoft Power Apps for facility batch tracking}
+\begin{itemize}[noitemsep,nolistsep]
+% \item[--]{Prepared training materials and conducted Ion demonstrations to operations and lab personnel} 
+\item[--]{Produced widely-circulated app documentation for future developers and training material for operations and lab personnel}
+\item[--]{Selected to present Ion features at Business Development Managers internal conference}
+\end{itemize}
+\item {Performed value stream mapping and independently conducted lab and pilot experiments to determine a method to reduce down-time by 12\% in the most frequently utilized regeneration procedure}\\
+\end{itemize}
+
+\vspace{-4 pt} % 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SKILLS: Important and relevant to the job you are applying for
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent \textbf{\large\underline{CORE SKILLS}} \\
+\begin{comment}
+    TOP SKILLS: Embedded linux (intermediate), MATLAB (intermediate), Simulink, Agile Project Management, Git, Python, LabVIEW, Java, Minitab, multi-factor DOE,  Microsoft Office (Excel, Visio, Word, PowerPoint), Microsoft Power BI, Verification \& Validation, \LaTeX
+    Aspen Plus, OOP, code documentation, multi-factor DOE, parametric and non-parametric stats
+\end{comment}
+\vspace{-10 pt} % 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SKILLS TABLE; Take unstructured list of
+% skills above and convert to a matrix table with
+% ROW(Highly Proficient, Proficient, and Knowledgable) x COL(SW/Prog Lang, Scientific, Professional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+%\begin{tabular}{ |p{3cm}|p{3cm}|p{3cm}|p{3cm}| } % original
+\begin{tabular}{ |c |m{5cm}|m{5cm}|m{5cm}| }
+    \cline{2-4}
+    \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\textbf{Highly Proficient (4+ years)}} & \multicolumn{1}{c|}{\textbf{Proficient (1-3 yrs)}} & \multicolumn{1}{c|}{\textbf{Used Previously (\textless1 yr)}}\\
+    \hline
+  
+    \textbf{Software} & Development in Linux, Git, MATLAB, Python, Java, bash scripting, VS Code, Excel, \LaTeX & Unit testing (pytest, JUnit), Simulink, embedded linux, C/C++, AutoCAD & LabVIEW, JavaScript, C\#, .NET DevOps\\
+    \hline
+    \textbf{Technical} & Multivariate statistics, time-series and spatial data analysis, technical document writing & Electronics lab equipment (multimeters, oscilliscopes, soldering iron, power supplies) & Model-in-the-Loop, Software-in-the-Loop \\
+    \hline
+    \textbf{Professional} & Verification and validation testing, Agile PLM, Jira, Confluence & Contributing clean, maintainable code to codebases, design reviews & IBM DOORS \& RQM \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\vspace{7 pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EDUCATION
+% University name, degree, year of graduation, GPA (optional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent \textbf{\large\underline{EDUCATION}} \\
+\textbf{University of Minnesota - Twin Cities} \hfill \textit{Minneapolis, MN} \\
+Bachelor of Chemical Engineering (BChE) -- Minors in Math and Chemistry with CS Coursework \hfill \textit{Sept 2017} - \textit{Dec 2021} \\
+%\begin{itemize}[noitemsep,nolistsep]
+\textit{Coursework}: Intro to Computer Science (A-); Discrete Structures (A-); Graduate Electrochemical Engineering (A-); Intro Data Structures and Algorithms (B);  Applications of Differential Equations (B); Fourier Analysis (B) \\
+\textit{Activities}: American Institute of Chemical Engineers Minnesota Chapter - Executive Board; Engineers Without Borders; Beta Chi Theta Minnesota Chapter - Philanthropy Co-Chair; Minnesota Student Association - Undergraduate Representative \\
+%\end{itemize}
+
+\vspace{4 pt}
+
+\begin{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Certifications: Important and relevant to the job you are applying for
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent \textbf{\large\underline{CERTIFICATIONS}} \\
+\vspace{-3 pt}
+\noindent Engineer-in-Training (MN License)\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROJECTS
+% Can also include personal projects, competitions, contribution to Open source.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent \textbf{\large\underline{PROJECT WORK}} \\
+\noindent \textbf{A Better World Hackathon - MakeHaven}  \hfill  \textit{New Haven, CT}\\
+\noindent Hospital Bed Fall Prevention and Alert System - \textit{1st Place Physical System Category, 2nd Place Overall} \hfill \textit{May 19-21 2023}
+\begin{itemize}[noitemsep,nolistsep]
+\item {Developed a networked suite of infared and ultrasonic sensors which monitor a hospital room with multiple beds to alert medical staff to risky patient movements to prevent falls which must be reported to the State of Connecticut}
+\item {Presented poster to an expert judge panel with a team which included a biomedical engineer and an experienced physician}
+\end{itemize}
+\vspace{3 pt}
+\noindent \textbf{Chirijuyu, Gautemala Potable Water System} \hfill  \textit{Minneapolis, MN}\\
+\noindent Engineers Without Borders - University of Minnesota Chapter \hfill \textit{Sept 2020} - \textit{Oct 2021}
+\begin{itemize}[noitemsep,nolistsep]
+\item {Modeled pipeline routes in GIS programs and systematically assessed peak demand scenarios to anticipate pump energy requirements under rural power constraints}
+\item {Coordinated with a multi-disciplinary engineering team to perform quantitative alternatives analysis of pipeline designs}
+\end{itemize}
+% OLD PROJECTS
+\begin{comment}
+\vspace{3 pt}
+\noindent \textbf{Green Diesel Plant Simulation - Senior Project} \hfill  \textit{Minneapolis, MN}\\
+\noindent {Senior Design Project - Univ. of Minnesota Dept. of Chemical Engineering and Materials Science} \hfill \textit{Jan 2021} - \textit{May 2021}
+\begin{itemize}[noitemsep,nolistsep]
+\item {Collaborated with classmates to develop Aspen Plus and Python model for industrial-scale poly(oxymethylene) dimethyl ether production plant, a green diesel alternative with non-linear reaction kinetics}
+\end{itemize}
+\noindent \textbf{Hand Prosthetic - Engineering World Health} \hfill  \textit{Sept 2017} - \textit{Feb 2018}
+\begin{itemize}[noitemsep,nolistsep]
+\item {Designed and tested component hardware such as bearings, pins, and couplings as part of student-led effort to make a prosthetic hand for a local amputee}
+\item {Benchmarked fabricated components and modeled internal forces for which limits were provided by FEM framework in Simulink}
+\end{itemize}
+\end{comment}
+
+
+\end{document}
